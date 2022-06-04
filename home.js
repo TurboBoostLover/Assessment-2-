@@ -123,14 +123,24 @@ const deals = [
 
 //CODE HERE
 
+// let x = (Object.values(deals[0]))
+// console.log(x)
+
+// let y = x.splice(0,1)
+// let z = (y.toString)
+// console.log(z.replace('15%', '10%'))
+
+
+//Semi-solution kinda
+
 const newArr = deals.map(object => {
     if (object.title === '15% Off!'){
         return {...object, title:  '10% Off!'}
     }
     return object
 })
-
 console.log(newArr)
+
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -145,3 +155,13 @@ console.log(newArr)
 */
 
 //CODE HERE
+
+//Semi-solution kinda
+
+const newArr2 = deals.map(object => {
+    if (object.desc === '   This deal lasts until the end of March! '){
+        return {...object, desc:  'This deal lasts until the end of April'}
+    }
+    return object
+})
+console.log(newArr2)
