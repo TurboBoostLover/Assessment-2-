@@ -85,7 +85,11 @@ console.log(cartTotal2)
 
 /*
     TEXT ANSWER HERE
-
+    customer object
+    property - 1 : Full name of customer, "string"  -Need to know who the customer is or it would be pointless
+    property - 2 : address of customer, "string"     -Possibly delivery or propoganda to try to boost bussiness
+    property - 3 : phone number, number             -To call if any questions or concerns arrise with a purchase
+    property - 4 : email, "string"                  -To send coupons and possibly to have a rewards account tied to it
 */
 
 /*
@@ -94,3 +98,9 @@ console.log(cartTotal2)
 */
 
 //CODE HERE
+const customer = {
+    fullName: 'Nate Westergard',
+    address: '1234 South, 500 South',
+    phoneNumber: 1234567891,
+    email: 'Natew@school.com',
+}
