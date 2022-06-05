@@ -81,8 +81,8 @@ console.log(priceOfPizza)
 */
 
 //CODE HERE
-const {popularity: popularityOfPizza} = pizza
-console.log(popularityOfPizza)
+const {category: categoryOfPizza} = pizza
+console.log(categoryOfPizza)
 
 //////////////////PROBLEM 3////////////////////
 /* 
