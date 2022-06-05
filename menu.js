@@ -150,27 +150,9 @@ const foodArr = [
 
 //CODE HERE
 
-  
- //const filteredFood = foodArr.filter((tags) => tags === "Hops")
-
-
- const contains = (arr, name, cb) => cb(arr.includes(name))
-
-
- contains(foodArr, "Hops", result => {
-    if(result === true){
-      console.log(`The food is ${result}`)
-    } else {
-      console.log('No food with that tag')
-    }
-  })
-
-
-
-
-
-//console.log(filteredFood)
-
+ const filteredFood = foodArr.filter(function (el) {
+     return el.tags = "Hops"})
+ console.log(filteredFood)
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
