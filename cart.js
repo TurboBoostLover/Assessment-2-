@@ -58,12 +58,11 @@ console.log(summedPrice)
 */
 
 //CODE HERE
-const calcFinalPrice = (cartTotal, couponValue, tax)
-let cartTotal = summedPrice * tax
-let cartTotal2 = cartTotal - coupon
-
-calcFinalPrice(cartTotal, 10, .06)  
-console.log(${cartTotal2})
+function calcFinalPrice(cartTotal, couponValue, tax) {
+return (cartTotal * tax) - couponValue
+}
+let cartTotal2 = calcFinalPrice(15, .06, 1) 
+console.log(cartTotal2)
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
