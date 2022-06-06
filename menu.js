@@ -149,10 +149,17 @@ const foodArr = [
 */
 
 //CODE HERE
+function callback (element) {
+    return element.tags.includes("Hops")
+}
+console.log(filteredFood)
+const filteredFood = foodArr.filter(callback)
 
- const filteredFood = foodArr.filter(function (el) {
+//Code I did solo
+ /*const filteredFood = foodArr.filter(function (el) {
      return el.tags = "Hops"})
- console.log(filteredFood)
+ console.log(filteredFood)*/
+
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -193,7 +200,17 @@ const foodArr = [
 */
 
 //CODE HERE
+const filterByProperty = function(property, number, type) {
+    const filteredArr = foodArr.filter((element) => {
+        if (type === 'above') {
+            return element[property] > number
+        } else if (type === 'below') {
+            return element[property] < number        }
+    })
+    return filteredArr
+}
 
+console.log(filterByProperty('price', 5, 'above'))
 
 /*
     Invoke the `filterByProperty` function passing
@@ -203,3 +220,4 @@ const foodArr = [
 */
 
 //CODE HERE
+console.log(filterByProperty('price', 5, 'above'))
