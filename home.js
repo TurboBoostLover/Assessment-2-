@@ -123,23 +123,18 @@ const deals = [
 
 //CODE HERE
 
-// let x = (Object.values(deals[0]))
-// console.log(x)
-
-// let y = x.splice(0,1)
-// let z = (y.toString)
-// console.log(z.replace('15%', '10%'))
+deals[0].title = deals[0].title.replace('15', '10')
 
 
 //Semi-solution kinda
 
-const newArr = deals.map(object => {
-    if (object.title === '15% Off!'){
-        return {...object, title:  '10% Off!'}
-    }
-    return object
-})
-console.log(newArr)
+// const newArr = deals.map(object => {
+//     if (object.title === '15% Off!'){
+//         return {...object, title:  '10% Off!'}
+//     }
+//     return object
+// })
+// console.log(newArr)
 
 /*
     The restaurant is going to continue its
@@ -156,12 +151,17 @@ console.log(newArr)
 
 //CODE HERE
 
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+
+
+
+
 //Semi-solution kinda
 
-const newArr2 = deals.map(object => {
-    if (object.desc === '   This deal lasts until the end of March! '){
-        return {...object, desc:  'This deal lasts until the end of April'}
-    }
-    return object
-})
-console.log(newArr2)
+// const newArr2 = deals.map(object => {
+//     if (object.desc === '   This deal lasts until the end of March! '){
+//         return {...object, desc:  'This deal lasts until the end of April'}
+//     }
+//     return object
+// })
+// console.log(newArr2)
